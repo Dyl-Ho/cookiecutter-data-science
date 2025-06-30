@@ -126,6 +126,9 @@ def verify_files(root, config):
     if config["linting_and_formatting"] == "flake8+black+isort":
         expected_files.append("setup.cfg")
 
+    if config["linting_and_formatting"] == "ruff":
+        expected_files.append("ruff.toml")
+
     if config["include_code_scaffold"] == "Yes":
         expected_files += [
             f"{config['module_name']}/config.py",
