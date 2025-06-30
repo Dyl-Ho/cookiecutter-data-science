@@ -125,7 +125,7 @@ def verify_files(root, config):
 
     if config["linting_and_formatting"] == "flake8+black+isort":
         expected_files.append("setup.cfg")
-    
+
     if config["linting_and_formatting"] == "ruff":
         expected_files.append("ruff.toml")
 
@@ -147,7 +147,6 @@ def verify_files(root, config):
             "docs/docs/index.md",
             "docs/docs/getting-started.md",
         ]
-    
 
     expected_files.append(config["dependency_file"])
 
