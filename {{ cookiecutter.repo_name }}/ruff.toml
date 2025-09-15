@@ -1,2 +1,5 @@
-# Allow lines to be as long as 120.
+# Allow lines to be as long as 88.
 line-length = 88
+
+[lint]
+extend-select = ["UP006", "UP007", "UP045"]
