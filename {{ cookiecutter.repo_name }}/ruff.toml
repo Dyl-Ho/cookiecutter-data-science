@@ -1,5 +1,6 @@
 # Allow lines to be as long as 88.
 line-length = 88
+unfixable = ["F401"]
 
 [lint]
 extend-select = ["UP006", "UP007", "UP045"]
